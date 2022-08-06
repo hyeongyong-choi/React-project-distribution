@@ -1,7 +1,10 @@
-const { configureStore } = require('@reduxjs/toolkit');
+import { configureStore } from '@reduxjs/toolkit';
+import todosSlice from './modules/todosSlice';
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    todos: todosSlice.reducer,
+  },
 });
 
 export default store;

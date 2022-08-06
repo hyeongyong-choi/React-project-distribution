@@ -2,18 +2,19 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-size: 16px;
+    font-size: 18px;
   }
   
   body {
-    background: #ffffff;
+    background-color: #ffffff;
     box-sizing: border-box;
     margin: 0 auto;
   }
 
   h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 28px;
+    font-weight: 500;
   }
 
   h2 {
@@ -23,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 
   h3 {
     margin: 0;
-    font-size: 28px;
+    font-size: 20px;
   }
 
   ul {
@@ -31,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
+    font-size: 18px;
     margin: 0;
   }
 `;

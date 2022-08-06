@@ -19,7 +19,6 @@ npm run server
 package.json
 
 ```json
-// ...
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -27,5 +26,4 @@ package.json
     "eject": "react-scripts eject",
     "server": "json-server --watch db.json --port 3001"
   },
-// ...
 ```

@@ -13,17 +13,17 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 36px;
   }
 
   h2 {
     margin: 0;
-    font-size: 28px;
+    font-size: 32px;
   }
 
   h3 {
     margin: 0;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   ul {

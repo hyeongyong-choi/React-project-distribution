@@ -8,9 +8,9 @@ const TodoRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/todolist" element={<TodoListPage />} />
-      <Route path="/todoform" element={<TodoFormPage />} />
-      <Route path="/tododetail/:id" element={<TodoDetailPage />} />
+      <Route path="/todo/add" element={<TodoFormPage />} />
+      <Route path="/todos" element={<TodoListPage />} />
+      <Route path="/todos/:id" element={<TodoDetailPage />} />
     </Routes>
   );
 };

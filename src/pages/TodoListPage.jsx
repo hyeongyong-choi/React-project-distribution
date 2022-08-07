@@ -3,11 +3,9 @@ import Layout from 'layout/Layout';
 
 const TodoListPage = () => {
   return (
-    <div>
-      <Layout>
+    <Layout>
       <TodoList />
-      </Layout>
-    </div>
+    </Layout>
   );
 };
 

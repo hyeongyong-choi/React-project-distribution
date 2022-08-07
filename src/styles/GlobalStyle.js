@@ -3,11 +3,11 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   * {
     font-size: 18px;
+    box-sizing: border-box;
   }
   
   body {
     background-color: #ffffff;
-    box-sizing: border-box;
     margin: 0 auto;
   }
 

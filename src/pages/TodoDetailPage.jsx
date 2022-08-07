@@ -1,8 +1,11 @@
+import Layout from 'layout/Layout';
+import TodoDetail from 'components/TodoDetail';
+
 const TodoDetailPage = () => {
   return (
-    <div>
-      <h1>TodoDetailPage</h1>
-    </div>
+    <Layout>
+      <TodoDetail />
+    </Layout>
   );
 };
 

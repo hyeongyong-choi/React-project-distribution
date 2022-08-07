@@ -1,18 +1,12 @@
-import LandingTodolist from "components/LandingTodolist";
-import Header from 'components/Header'
-
+import Landing from 'components/Landing';
+import Layout from 'layout/Layout';
 
 const LandingPage = () => {
   return (
-    <div>
-      <Header/>
-      <h1>무엇을 할까요?</h1>
-      <LandingTodolist text="할일 기록하기"></LandingTodolist>
-      <LandingTodolist text="TODO LIST"></LandingTodolist>
-    </div>
+    <Layout>
+      <Landing />
+    </Layout>
   );
 };
 
 export default LandingPage;
-
-

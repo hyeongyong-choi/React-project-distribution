@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import Button from './Button'
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <div>button</div>
+      <Button variant='home'/>
       <h1>모두의 투두리스트</h1>
     </HeaderContainer>
   );

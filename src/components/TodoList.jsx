@@ -1,28 +1,27 @@
-import React from 'react'
-import Todo from './Todo'
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
+import Todo from 'components/Todo';
 
 function TodoList() {
   return (
     <div>
-       <TodoListTitle>
-      내 할일
-      </TodoListTitle>
+      <TodoListTitle>내 할일</TodoListTitle>
       <ListArray>
-      <Todo/>
+        <Todo />
       </ListArray>
     </div>
-  )
+  );
 }
 
-export default TodoList
+export default TodoList;
 
-const TodoListTitle= styled.h1`
-  font-size:32px;
-  margin:30px 20px;
-`
-const ListArray= styled.div`
-  display:flex;
-  flex-direction:column;
-  gap:30px;
-`
+const TodoListTitle = styled.h1`
+  font-size: 32px;
+  margin: 30px 20px;
+`;
+
+const ListArray = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+`;

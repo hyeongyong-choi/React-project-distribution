@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import React from 'react';
 
 function Todo() {
@@ -7,33 +7,32 @@ function Todo() {
       <TodoLists>
         <TodoListContent>내용</TodoListContent>
         <TodoListWriter>작성자:홍길동</TodoListWriter>
-      </TodoLists>   
+      </TodoLists>
     </div>
-  )
+  );
 }
 
-export default Todo
+export default Todo;
 
+const TodoLists = styled.div`
+  padding: 12px;
+  height: 90px;
+  border: 1px solid rgb(221, 221, 221);
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+`;
 
-const TodoLists= styled.div`
-    padding: 12px;
-    height: 90px;
-    border: 1px solid rgb(221, 221, 221);
-    background-color: rgb(255, 255, 255);
-    border-radius: 12px;
-    width: 90%;
-    margin: 0px auto;
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-    padding:20px;
-
-`
-const TodoListContent=styled.p`
+const TodoListContent = styled.p`
   font-size: 20px;
-  font-weight:400;
-`
+  font-weight: 400;
+`;
 
-const TodoListWriter=styled.p`
+const TodoListWriter = styled.p`
   font-size: 10px;
-`
+`;

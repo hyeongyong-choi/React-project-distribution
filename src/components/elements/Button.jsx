@@ -2,9 +2,9 @@ import styled, { css } from 'styled-components';
 import { faTrash, faHouse, faPencil } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Button = ({ children, size, variant, type = 'button' }) => {
+const Button = ({ children, size, variant, type = 'button', clickHandler }) => {
   return (
-    <StButton size={size} variant={variant} type={type}>
+    <StButton size={size} variant={variant} type={type} onClick={clickHandler}>
       {children}
       {variant === 'delete' ? (
         <FontAwesomeIcon icon={faTrash} size="1x" />

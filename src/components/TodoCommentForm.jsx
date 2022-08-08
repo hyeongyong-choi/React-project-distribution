@@ -7,10 +7,19 @@ const TodoCommentForm = () => {
     <TodoCommentFormContainer>
       <form>
         <NameContainer>
-          <Input placeholder="이름(1~5자)" width="100%" />
+          <Input
+            placeholder="이름(1~5자)"
+            width="100%"
+            id="commentName"
+            labelText="이름"
+          />
         </NameContainer>
-        <Input placeholder="댓글을 추가하세요(1~30자)" />
-        <Button children="수정하기" size="small" />
+        <Input
+          placeholder="댓글을 추가하세요(1~30자)"
+          id="commentContent"
+          labelText="댓글"
+        />
+        <Button size="small">수정하기</Button>
       </form>
     </TodoCommentFormContainer>
   );

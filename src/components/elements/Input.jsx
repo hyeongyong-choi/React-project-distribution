@@ -1,17 +1,35 @@
 import styled, { css } from 'styled-components';
+import { a11yHidden } from 'styles/mixin';
 
-function Input({ value, placeholder, width }) {
+function Input({ value, placeholder, width, id, labelText, isHide = false }) {
+  const handleChange = (e) => {
+    console.log(e.target.value);
+  };
+
   return (
-    <FormInput
-      type="text"
-      value={value}
-      placeholder={placeholder}
-      width={width}
-    />
+    <FormInputContainer>
+      <label htmlFor={id} className={isHide ? 'a11y-hidden' : ''}>
+        {labelText}
+      </label>
+      <FormInput
+        type="text"
+        value={value}
+        placeholder={placeholder}
+        width={width}
+        onChange={handleChange}
+        id={id}
+      />
+    </FormInputContainer>
   );
 }
 
 export default Input;
+
+const FormInputContainer = styled.div`
+  .a11y-hidden {
+    ${a11yHidden}
+  }
+`;
 
 const FormInput = styled.input`
   ${(props) => {

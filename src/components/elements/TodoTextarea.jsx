@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import { a11yHidden } from 'styles/mixin';
 
 const TodoTextarea = (props) => {
-  const { todoContent, isHide } = props;
+  const { todoLabel, todoContent, isHide } = props;
 
   return (
     <TodoTextareaContainer>
       <label htmlFor="todo-textarea" className={isHide ? 'a11y-hidden' : ''}>
-        내용
+        {todoLabel}
       </label>
       <StyledTextarea
         id="todo-textarea"
@@ -42,5 +42,6 @@ const StyledTextarea = styled.textarea`
 
 TodoTextarea.defaultProps = {
   isHide: false,
+  todoLabel: '',
   todoContent: '',
 };

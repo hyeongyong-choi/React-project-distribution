@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const TodoEditor = () => {
   return (
     <TodoEditorContainer>
-      <TodoTextarea isHide={true} />
+      <TodoTextarea isHide={true} todoLabel="내용" />
     </TodoEditorContainer>
   );
 };

@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { a11yHidden } from 'styles/mixin';
 
 const TodoTextarea = (props) => {
-  const { isEdit, todoContent, isHide } = props;
+  const { todoContent, isHide } = props;
 
   return (
     <TodoTextareaContainer>
-      <label htmlFor="todo-textarea" class={isHide ? 'a11y-hidden' : ''}>
+      <label htmlFor="todo-textarea" className={isHide ? 'a11y-hidden' : ''}>
         내용
       </label>
       <StyledTextarea
@@ -15,9 +15,8 @@ const TodoTextarea = (props) => {
         rows="10"
         cols="50"
         placeholder="내용을 입력해주세요. (2~200자)"
-      >
-        {isEdit ? { todoContent } : ''}
-      </StyledTextarea>
+        defaultValue={todoContent}
+      ></StyledTextarea>
     </TodoTextareaContainer>
   );
 };
@@ -42,6 +41,6 @@ const StyledTextarea = styled.textarea`
 `;
 
 TodoTextarea.defaultProps = {
-  isEdit: false,
+  isHide: false,
   todoContent: '',
 };

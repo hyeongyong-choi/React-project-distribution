@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { a11yHidden } from 'styles/mixin';
 
@@ -9,7 +10,10 @@ function Input({
   labelText,
   isHide = false,
   changeHandler = null,
-}) {
+}) 
+
+
+{
   return (
     <FormInputContainer>
       <label htmlFor={id} className={isHide ? 'a11y-hidden' : ''}>

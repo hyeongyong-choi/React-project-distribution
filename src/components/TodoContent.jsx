@@ -1,18 +1,25 @@
 import styled from 'styled-components';
+import { useSelector,useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { __getTodos } from 'redux/modules/todosSlice';
+import { useParams } from 'react-router-dom';
 
-const TodoContent = (todo) => {
-  const { todoId, todoTitle, TodoContent } = todo;
+const TodoContent = ({todolist}) => {
+  // const { todos.id, todoTitle, TodoContent } = todos;
+  
+
+
 
   return (
     <div>
       <TodoIdContainer>
-        <StyledTodoId>{`id: (${todoId})`}</StyledTodoId>
+        <StyledTodoId>{`id: (${todolist.id})`}</StyledTodoId>
       </TodoIdContainer>
       <TodoContainer>
-        <h2>{todoTitle}</h2>
+        <h2>{todolist.title}</h2>
         <TodoContentContainer>
           <div>
-            <span>{TodoContent}</span>
+            <span>{todolist.content}</span>
           </div>
         </TodoContentContainer>
       </TodoContainer>

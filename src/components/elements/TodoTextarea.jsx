@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { a11yHidden } from 'styles/mixin';
 
 const TodoTextarea = (props) => {
-  const { todoLabel, todoContent, isHide } = props;
+  const { todoLabel, todoContent, isHide , changeHandler} = props;
 
   return (
     <TodoTextareaContainer>
@@ -16,6 +16,7 @@ const TodoTextarea = (props) => {
         cols="50"
         placeholder="내용을 입력해주세요. (2~200자)"
         defaultValue={todoContent}
+        onChange={changeHandler}
       ></StyledTextarea>
     </TodoTextareaContainer>
   );
